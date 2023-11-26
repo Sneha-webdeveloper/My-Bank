@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<style>
+    body{
+            background-image: url("https://img.freepik.com/free-photo/successful-business-partnership-formed-through-handshake-teamwork-generated-by-ai_188544-55771.jpg?t=st=1700554878~exp=1700558478~hmac=c1406b842fc239d00a4b1a47745c9fa6b356bb3c108ccc72a7e2172ee5bbb791&w=1060");
+            background-position:center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+          
+        }
+
+#cont{
+    background-color:rgba(222, 184, 135, 0.529);
+    box-shadow:  15px 15px 15px rgba(0, 0, 0, 0.388),15px 15px 15px rgba(0, 0, 0, 0.3);
+}
+#cont p{
+    text-shadow:  15px 15px 15px rgba(254, 254, 254, 0.959),15px 15px 15px rgba(253, 250, 250, 0.564);
+}
+#cont button:hover{
+    background-color:burlywood;
+    color: white;
+    
+}
+ h1{
+    color: rgba(0, 0, 0, 0.736);
+    margin-top: 20px;
+
+ } 
+
+</style>
+</head>
+<body>
+    <div class=" container my-5 p-3   text-center  text-light" >
+       <div class="row">
+        <div class="col-lg-4"></div>
+<div class="col-md-4 col-sm-12 border rounded" id="cont">
+                <h1 class="text-center shadow text-white fw-bolder" style=" font-family: 'Times New Roman', Times, serif;">MY BANK</h1>
+        
+                <img src="./images/OIP.jpg" alt="" style="width: 110px;height: 110px; border-radius: 50%;">
+                <p class="fw-bolder fs-5 shadow" style=" font-family: 'Times New Roman', Times, serif;" >Step into a welcoming world of personalized banking excellence</p>
+                <form action="">
+                    <div class="mt-2 p-2">
+                        <input id="reg_name" class="form-control p-2" type="text" placeholder="enter username" >
+                    </div>
+        
+                    <div class="mt-2 p-2">
+                        <input id="reg_acno" class="form-control p-2" type="text" placeholder="enter account number" >
+                    </div>
+        
+                    <div class="mt-2 p-2">
+                        <input id="reg_psw" class="form-control p-2" type="password" placeholder="enter password" >
+                    </div>
+                    
+                        <div class="mt-2 p-2 text-center">
+                            <button onclick="register()" type="button" class="btn btn-success btn-outline-light  w-100 fw-bold">Register</button>
+                        </div>
+        
+                        <div class="mt-2 p-2 text-center"><a href="./login.html" style="text-decoration: none;" class="fw-bold text-light">Sign in?</a></div>
+        
+                </form>
+    
+</div>   
+<div class="col-lg-4"></div> 
+       </div>
+    </div>
+
+</body>
+<script src="./script.js"></script>
+</html>

@@ -1,0 +1,288 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Philosopher', sans-serif;
+}
+
+/* ------------------navbar------------------ */
+.navbar{
+    position: sticky;
+        top: 0;
+        left: 0;
+        border-bottom:3px inset rgb(6, 246, 246) ;
+    z-index: 10;
+}
+
+#navbarNav {   
+    margin-left: 450px;  
+    
+   
+}
+
+.navbar-nav{
+    border-top:none ;
+
+}
+
+.nav-link { 
+    position: relative;
+    color: white; 
+    font-weight: bolder; 
+    font-size: 20px;
+    
+}
+.nav-link::after{
+    transition: all 0.2s;
+    opacity: 0;
+}
+.nav-item :hover{
+    color:rgb(7, 248, 248);
+}
+.nav-link:hover::after{
+content:" " ;
+height: 2px;
+width: 100%;
+opacity: 1;
+background-color:rgb(6, 253, 253);
+
+position: absolute;
+bottom: 0;
+left: 0;
+}
+
+/* -----------------home-------------- */
+.carousel-item{
+    /* background: linear-gradient(to right, #c9ecc1, #7ac083);  */
+background: linear-gradient(#c0f8f6,white);
+height: 600px;
+}
+.carousel-item img{
+    border-radius: 50% 10px  50% 10px ;
+    border: 5px rgb(165 243 243) solid;
+}
+.carousel-caption h1{
+    padding: 5px;
+    margin-left: 71%;
+    font-size: 67px;
+    font-weight: 900;
+    /* color: rgb(57 52 33); */
+    /* color: rgb(24 162 226 / 98%); */
+    /* color: rgb(227 212 10); */
+}
+.carousel-caption h4{
+    padding: 5px;
+    margin-left:35%;
+    font-size: 25px;
+    color: rgb(63, 136, 245);
+}
+
+.carousel-caption h4{
+    
+    width: 100%;
+    /* -webkit-text-stroke: #5488f9 2px; */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: transparent;
+background-image: linear-gradient(rgb(81, 151, 249),#5488f9);
+background-repeat: no-repeat;
+ -webkit-background-clip: text;
+background-position: -850px 0;
+animation: backcolor 4s linear infinite alternate;
+
+
+}
+
+@keyframes backcolor{
+    100%{
+        background-position: 0 0;
+
+
+    }
+}
+
+.carousel-caption p {
+    color: rgb(48 122 233);
+    font-size: xx-large;
+    background-color: aliceblue;
+    height: 320px;
+    width: 350px;
+    border-radius: 50%;
+    padding: 39px;
+    margin-left: 60%;
+    margin-bottom: 6%;
+    border: #c0f8f6 5px solid;
+}
+/* ---------postertype */
+#img1{
+    background-image: linear-gradient(rgba(9, 107, 107, 0.7), rgba(17, 134, 134, 0.7)), url('./images/agri.jpg');
+    height: 450px;
+    background-position: center;
+
+  } 
+  #img1 h1,#img2 h1{
+    font-size: 50px;
+  }
+  #img2{
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('./images/travel.jpg');
+  }
+  #img1 button,#img2 button{
+    padding: 20px;
+    text-align: center;
+color: white;   
+outline: 5px solid white;
+font-weight: 900;
+    border-radius: 5px;
+    margin-left: 100px;
+    background: transparent;
+    border: none;
+  }
+  #img1 button:hover,#img2 button:hover{
+outline: none;
+background-color: black;
+  }
+  
+/* -------------services--------------- */
+#services{
+    background: linear-gradient(rgb(207, 230, 250),white);
+
+}
+#serv span i{
+    background-color: rgba(0, 0, 0, 0.041);
+    border-radius: 50%;
+    padding: 5px;
+}
+#serv .card:hover{
+    border: 2px solid rgb(134, 248, 248);
+    /* background: linear-gradient( to left, rgb(201, 248, 248),white); */
+}
+#serv .card:hover  span i{
+    background-color:rgb(93, 218, 252) ;
+    color: white;
+}
+#hori i{
+    margin-top: 15px;
+}
+
+/* -----------------applyyyyyyyyyy--------- */
+#apply{
+    background: linear-gradient(aliceblue,white);
+}
+    
+#card {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  #card .card-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    transition: 0.3s;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+  }
+  
+  #card  {
+    transition: transform 0.3s;
+  }
+  
+  #card:hover .card-text{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* height: 50%; */
+
+    opacity: 0.7;
+    background: linear-gradient(180deg, darkblue 70%, darkblue);
+  }
+      
+ /* -----------blog---------------- */
+    #blog{
+background:linear-gradient(rgba(6, 253, 253, 0.466),white);
+    }  
+
+    #card1 {
+        position: relative;
+        cursor: pointer;
+      }
+      
+      #card1 .card-text h4{
+        position: absolute;
+        bottom: -100px;
+        left:5px;
+        width: 100%;
+        height: 50%;
+        color: aliceblue;
+      }
+      #card1 .card-text button{
+        position: absolute;
+    bottom: 280px;
+    left: 10px;
+      }
+    #card1:hover img{
+        transform: scale(1.02);
+    }
+     #horizontal .card:hover{
+        background:linear-gradient(to top,rgb(186, 246, 246),white) ;
+    }
+/* ---------------mediaquery ------------------ */
+
+@media screen and (max-width:400px)  {
+   #navbarNav{
+    margin-left: -10%;
+    text-align: center;
+    background-color: black;
+   }
+   .navbar-nav{
+    border-top:3px inset rgb(6, 246, 246) ;
+
+}
+   /* ------------home---carousel-------- */
+
+.carousel-item{
+    height: 300px;
+    width: 400px;
+    rotate: right;
+}
+.carousel-item img{
+    border-radius: 50px 0 50px 0;
+    height: 300px;
+}
+#ch1,#ch2,#ch3{
+    font-size: 35px;
+    width: 200px;
+    margin-left: 54%;
+    margin-bottom: 25px;
+}
+.carousel-caption p{
+    display: none;
+}
+.carousel-caption h4 {
+    margin-bottom: 68px;
+    width: 400px;
+    color:rgba(127, 160, 175, 0.98);
+    margin-left: -20%;
+}
+
+#poster .col-12{
+    height:550px;
+}
+iframe{
+    width: 400px;
+}
+.col-12{
+    width: 390px;
+}
+h1{
+    font-size: large;
+}
+}

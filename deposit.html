@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ---style---- -->
+    <style>
+           body {
+            /* background-image:linear-gradient(rgba(0, 0, 0, 0.144),rgba(0, 0, 0, 0.29)),url("https://img.freepik.com/free-photo/woman-using-metro-card-machine-city_23-2149491258.jpg?w=1060&t=st=1700812403~exp=1700813003~hmac=db2b9ce71f1ad73a4645f8a1f7aa37e47e43c98656d768d332a6080ae7358738"); */
+            background-image:linear-gradient(rgba(0, 0, 0, 0.144),rgba(0, 0, 0, 0.29)),url("./images/depomain.jpg");
+            background-position:center;
+            background-size: cover;
+            background-repeat: no-repeat;
+           
+           
+            
+          
+        }
+#right{
+    margin-left: 100px;
+}
+footer{
+    margin-top: 200px;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- nav -->
+    <nav class="navbar shadow" style="background-color: #0a4275;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" >
+                <img src="./images/OIP.jpg" alt="Logo" width="40" height="34"  class="d-inline-block  ms-2 rounded">
+              <span class="text-white fs-4 ms-3 fw-bolder"> MY BANK</span>
+              </a>
+          <div class="d-flex" role="search">
+            <button onclick="logout()" class="btn btn-outline-light  me-3 ms-3 text-white fw-bold" type="button">Log Out <i class="fa-solid fa-xmark fa-beat-fade" style="color: #fcfcfc;"></i></button>
+            
+          </div>
+        </div>
+      </nav>
+      <!-- --------heading -->
+<div class="container-fluid shadow text-center text-light mt-5" style="background-color: rgba(0, 0, 0, 0.27); font-family: sans-serif;">
+          <h1> WELCOME TO <span class="fw-bolder">MY BANK</span></h1>
+          <h2> ONLINE BANKING</h2>
+     
+</div>
+
+    <!-- --deposit and withdraw-->
+
+<div class="container w-75 mb-5 pb-3 " id="main">
+        <div class="row">
+            <div class="col-lg-5 col-12 mt-5 ">
+                <h1 class="text-center text-light my-3" style="font-family: Georgia, 'Times New Roman', Times, serif;">DEPOSIT</h1>
+                <form action="" class="border border-light p-3 rounded">
+                    <div class="mt-2 p-2">
+                        <input id="dep_amount" class="form-control p-2" type="text" placeholder="Enter amount" >
+                    </div>
+        
+                    <div class="mt-2 p-2">
+                        <input id="dep_acno" class="form-control p-2" type="text" placeholder="Enter account number" >
+                    </div>
+                    <button onclick="deposit()" class="btn btn-success w-100 text-white fw-bold mb-3" type="button">Deposit</button>
+                <div id="bal_amount">
+
+                </div>
+                </form>
+            </div>
+
+            <div class="col-lg-5 col-12 mt-5" id="right">
+                <h1 class="text-center text-light my-3" style="font-family: Georgia, 'Times New Roman', Times, serif;">WITHDRAW</h1>
+                <form action=""  class="border border-light p-3 rounded">
+                    <div class="mt-2 p-2">
+                        <input id="wd_amount" class="form-control p-2" type="text" placeholder="Enter amount" >
+                    </div>
+        
+                    <div class="mt-2 p-2">
+                        <input id="wd_acno" class="form-control p-2" type="text" placeholder="Enter account number" >
+                    </div>
+                    <button onclick="withdrawal()" class="btn btn-primary w-100 text-white fw-bold" type="button">withdraw</button>
+                <div id="withdraw_amount"></div>
+                </form>
+            </div>
+    
+        </div>
+    
+</div>
+
+<!-- --------------foooter -->
+<section class="">
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #0a4275;">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: CTA -->
+        <section class="">
+            
+          <p class="d-flex justify-content-center align-items-center">
+           
+            <span class="me-3 fw-bolder">Register for free</span>
+            <input type="text" placeholder="Email address" class="rounded w-50 p-2">
+            <button data-mdb-ripple-init type="button" class="btn btn-outline-light btn-rounded ms-2 fw-bold">
+              Sign up!
+            </button>
+          </p>
+        </section>
+        <!-- Section: CTA -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MYBANK.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
+</body>
+<script src="./script.js"></script>
+
+</html>
